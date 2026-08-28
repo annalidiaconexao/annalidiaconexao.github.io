@@ -1,17 +1,344 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anna Lídia | Terapias de Conexão</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anna Lídia | Terapias de Conexão</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f7f4ed;
+      color: #394236;
+      line-height: 1.7;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(247,244,237,0.75), rgba(247,244,237,0.92)),
+        radial-gradient(circle at top, #d9dfc9, #f7f4ed 65%);
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      font-weight: normal;
+      color: #536247;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: normal;
+      color: #8b6f55;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 35px;
+      font-size: 18px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #667755;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-family: Arial, sans-serif;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background: #4f6045;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 38px;
+      font-weight: normal;
+      color: #536247;
+      margin-bottom: 45px;
+    }
+
+    .sobre {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .sobre-texto p {
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    .foto {
+      min-height: 420px;
+      border-radius: 180px 180px 30px 30px;
+      background: linear-gradient(135deg, #d6dcc9, #aebca0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #536247;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .terapias {
+      background: #ebe9df;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #f9f8f3;
+      padding: 30px 22px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(70,70,50,0.07);
+    }
+
+    .card h3 {
+      color: #667755;
+      font-size: 21px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #62675d;
+    }
+
+    .atendimento {
+      text-align: center;
+    }
+
+    .atendimento p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .contato {
+      background: #536247;
+      color: #f7f4ed;
+      text-align: center;
+    }
+
+    .contato .titulo {
+      color: #f7f4ed;
+    }
+
+    footer {
+      padding: 25px 20px;
+      text-align: center;
+      background: #394236;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+      .sobre {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      .foto {
+        min-height: 300px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <h1>Anna Lídia</h1>
-    <h2>Terapias de Conexão</h2>
+  <header>
+    <div class="hero">
+      <h1>Anna Lídia</h1>
+      <h2>Terapias de Conexão</h2>
 
-    <p>Um espaço de cuidado, acolhimento e conexão com você mesma.</p>
+      <p>
+        Um espaço de cuidado, acolhimento e conexão,
+        criado para você voltar o olhar para si mesma.
+      </p>
+
+      <a class="botao" href="#contato">Quero conhecer</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <h2 class="titulo">Sobre mim</h2>
+
+      <div class="sobre">
+
+        <div class="sobre-texto">
+          <p>
+            Sou Anna Lídia e acredito que o cuidado começa
+            quando nos permitimos parar, respirar e olhar
+            para dentro.
+          </p>
+
+          <p>
+            Minha trajetória reúne diferentes práticas
+            terapêuticas e de autoconhecimento, utilizadas
+            de forma acolhedora e individualizada.
+          </p>
+
+          <p>
+            Meu propósito é oferecer um espaço seguro para
+            momentos de pausa, conexão e cuidado com você.
+          </p>
+        </div>
+
+        <div class="foto">
+          <p>Em breve, uma foto minha aqui 🌿</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="terapias">
+    <div class="container">
+
+      <h2 class="titulo">Terapias de Conexão</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Reiki</h3>
+          <p>
+            Uma prática energética voltada ao equilíbrio,
+            relaxamento e bem-estar.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Terapia com Cristais</h3>
+          <p>
+            Utilização dos cristais como instrumentos
+            dentro de uma proposta de cuidado energético.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Baralho Cigano</h3>
+          <p>
+            Uma ferramenta de reflexão, orientação e
+            autoconhecimento.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Deeksha</h3>
+          <p>
+            Uma prática contemplativa voltada à presença,
+            conexão e expansão da consciência.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Benzimento</h3>
+          <p>
+            Uma prática tradicional de cuidado e
+            acolhimento dentro de uma perspectiva espiritual.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Atendimento Integrativo</h3>
+          <p>
+            Um olhar individualizado que considera a pessoa
+            de forma integral.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="atendimento">
+    <div class="container">
+
+      <h2 class="titulo">Um espaço para você</h2>
+
+      <p>
+        Os atendimentos são realizados presencialmente
+        em Sorocaba e também de forma online.
+      </p>
+
+      <p>
+        Cada encontro é conduzido com acolhimento,
+        presença e respeito à sua individualidade.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+
+      <h2 class="titulo">Vamos conversar?</h2>
+
+      <p style="margin-bottom: 25px;">
+        Será um prazer conhecer você e apresentar
+        as possibilidades de atendimento.
+      </p>
+
+      <a class="botao" href="#">
+        Entrar em contato
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Anna Lídia · Terapias de Conexão
+  </footer>
 
 </body>
 </html>
